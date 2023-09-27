@@ -1,11 +1,22 @@
+header {
+  text-align: justify;
+}
 nav {
+  display: flex;
+  justify-content: space-around;
   height: 4rem;
   background-color: #5f464b;
-  display: flex;
 }
 
-img {
-  width: 20px;
+.logo {
+  margin: 0.5rem;
+}
+
+#btnSubmit {
+  margin: 1rem;
+}
+
+.img {
   height: auto;
 }
 /* Titre de bienvenue */

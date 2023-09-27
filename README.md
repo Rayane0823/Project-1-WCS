@@ -15,17 +15,20 @@ Mail : Rayanemoussaoui08@gmail.com
 
 # Features
 
-IMBRASSE Romain : 
+IMBRASSE Romain :
+
 - Responsive
 - Main Home menu (HTML, CSS)
 - Main questions menu : display in case of good or bad answer / random questions generator (Javascript)
 
-LOBEZ Xavier : 
+LOBEZ Xavier :
+
 - Navigation Bar (HTML, CSS)
 - Footer (HTML, CSS)
 - Main results menu (HTML, CSS, Javascript)
 
-MOUSSAOUI Rayane : 
+MOUSSAOUI Rayane :
+
 - Main questions menu (HTML, CSS)
 - Main "Quizz populaires" menu (HTML, CSS)
 - Main questions menu : Timer, latency between questions, questions counter (Javascript)
