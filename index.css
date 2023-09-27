@@ -1,4 +1,8 @@
 /* Titre de bienvenue */
+h1 {
+    text-align: center;
+}
+
 /* Message d'acceuil */
 /* Titre nos quizz */
 /* Bouton avec nos quizz dedans */
