@@ -2,14 +2,22 @@ nav {
   height: 4rem;
   background-color: #5f464b;
   display: flex;
+  justify-content: space-between;
 }
 
 img {
   width: 20px;
   height: auto;
+  display: flex;
+  align-items: center;
 }
 body {
   background-color: rgb(165, 42, 42);
+}
+
+.logo {
+  width: 3rem;
+  margin: 0.5rem;
 }
 
 h1 {
