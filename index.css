@@ -2,10 +2,6 @@
    box-sizing: border-box;
  }
 
- body {
-   background-color: #5F464B;
- }
-
  /* ===== HEADER ===== */
 
  header {
@@ -141,25 +137,6 @@
 
  /*  ===== VERIFIER QUELLE PAGE ? ===== */
 
- .questions-counter-timer {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
- }
-
- .questions-container {
-   margin: 20em;
-   padding-top: 0;
-   padding-bottom: 2em;
-   background-color: #5f464b;
-   border: 1px solid black;
-   border-radius: 9px;
- }
-
- #question {
-   margin-left: 3em;
-   margin-right: 3em;
- }
 
  #btnSubmit {
    margin: 1rem;
@@ -171,4 +148,45 @@
 
  header {
    min-height: 250px;
+ }
+
+
+
+
+
+
+
+
+
+ /* Menu questions */
+
+ .questions-counter-timer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-left: 2em;
+   margin-right: 2em;
+ }
+
+
+ .questions-container {
+   margin: 20em;
+   padding-top: 0;
+   padding-bottom: 2em;
+   background-color: #5f464b;
+   border: 1px solid black;
+   border-radius: 9px;
+ }
+
+ #answers-buttons {
+   display: grid;
+   grid-template-columns: repeat(2, 15em);
+   grid-template-rows: repeat(2, 5em);
+   margin-left: 8em;
+   margin-right: 8em;
+ }
+
+ #question {
+   margin-left: 3em;
+   margin-right: 3em;
  }
