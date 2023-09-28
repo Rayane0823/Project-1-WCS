@@ -50,15 +50,25 @@ nav {
   height: 4rem;
   background-color: #5f464b;
   display: flex;
+  justify-content: space-between;
 }
 
 img {
-  width: 20px;
-  height: auto;
+  width: 5rem;
+  background-color: #5f464b;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin: 1rem;
 }
 
 body {
   background-color: rgb(165, 42, 42);
+}
+
+.logo {
+  width: 3rem;
+  margin: 0.5rem;
 }
 
 h1 {
