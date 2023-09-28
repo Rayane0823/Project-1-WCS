@@ -1,8 +1,52 @@
-/* Titre de bienvenue */
+* {
+    box-sizing: border-box;
+}
+
+
 h1 {
     text-align: center;
 }
 
-/* Message d'acceuil */
-/* Titre nos quizz */
-/* Bouton avec nos quizz dedans */
+.questions-counter-timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.questions-container {
+    margin: 20em;
+    padding-top: 0;
+    padding-bottom: 2em;
+    background-color: #5F464B;
+    border: 1px solid black;
+    border-radius: 9px;
+}
+
+#question {
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+#answers-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 15em);
+    grid-template-rows: repeat(2, 5em);
+    margin-left: 8em;
+    margin-right: 8em;
+}
+
+button {
+    margin: 0 0.5rem 1rem
+}
+
+h2 {
+    margin-bottom: 2em;
+}
+
+#timer {
+    padding-right: 1em;
+}
+
+#counter {
+    padding-left: 1em;
+}

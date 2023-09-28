@@ -29,3 +29,12 @@ MOUSSAOUI Rayane :
 - Main questions menu (HTML, CSS)
 - Main "Quizz populaires" menu (HTML, CSS)
 - Main questions menu : Timer, latency between questions, questions counter (Javascript)
+
+
+
+
+| HTML  | CSS       | Javascript|
+| :--------------- |:---------------:| -----:|
+| Navigation Bar     |   ce texte  |  Aligné à droite |
+| Main Home menu     |      est    |   Aligné à droite |
+| Main Questions menu| centré    |    Aligné à droite |
