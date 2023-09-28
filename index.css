@@ -1,3 +1,31 @@
+nav {
+  height: 5rem;
+  background-color: #5f464b;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+}
+
+img {
+  width: 5rem;
+  background-color: #5f464b;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+body {
+  background-color: rgb(165, 42, 42);
+}
+
+.logo {
+  height: 4rem;
+  width: auto;
+  margin-left: 0.5rem;
+  align-items: center;
+}
+
 h1 {
   text-align: center;
 }
@@ -12,7 +40,7 @@ h1 {
   margin: 20em;
   padding-top: 0;
   padding-bottom: 2em;
-  background-color: #5F464B;
+  background-color: #5f464b;
   border: 1px solid black;
   border-radius: 9px;
 }
@@ -31,7 +59,7 @@ h1 {
 }
 
 button {
-  margin: 0 0.5rem 1rem
+  margin: 0 0.5rem 1rem;
 }
 
 h2 {
@@ -44,31 +72,6 @@ h2 {
 
 #counter {
   padding-left: 1em;
-}
-
-nav {
-  height: 4rem;
-  background-color: #5f464b;
-  display: flex;
-  justify-content: space-between;
-}
-
-img {
-  width: 5rem;
-  background-color: #5f464b;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem;
-  margin: 1rem;
-}
-
-body {
-  background-color: rgb(165, 42, 42);
-}
-
-.logo {
-  width: 3rem;
-  margin: 0.5rem;
 }
 
 h1 {
@@ -163,10 +166,12 @@ element.style {
   text-shadow: 1px 1px 1px #000;
   border-radius: 10px;
   background-color: rgb(37, 220, 0);
-  background-image: linear-gradient(to top left,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2) 30%,
-      rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
@@ -180,20 +185,8 @@ element.style {
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-
 header {
   text-align: justify;
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  height: 4rem;
-  background-color: #5f464b;
-}
-
-.logo {
-  margin: 0.5rem;
 }
 
 #btnSubmit {
@@ -206,5 +199,4 @@ nav {
 
 header {
   min-height: 250px;
-
 }
