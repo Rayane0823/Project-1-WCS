@@ -1,2 +1,3 @@
-// Réponses Vrai ou Faux + Couleur des Boutons
-// Générateur de questions, au moins 50
+// Menu principal des questions :
+// affichage en cas de bonne ou mauvaise réponse /
+//  générateur de questions aléatoires

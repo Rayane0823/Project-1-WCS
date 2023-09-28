@@ -8,7 +8,109 @@ img {
   width: 20px;
   height: auto;
 }
-/* Titre de bienvenue */
-/* Message d'acceuil */
-/* Titre nos quizz */
-/* Bouton avec nos quizz dedans */
+body {
+  background-color: rgb(165, 42, 42);
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-top: 10%;
+}
+
+h2 {
+  color: #fff;
+  margin: 1.5%;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(1fr, 3);
+  grid-template-rows: repeat(1fr, 2);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(10%, auto);
+}
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+.two {
+  grid-column: 2;
+  grid-row: 1;
+}
+.three {
+  grid-column: 3;
+  grid-row: 1;
+}
+.four {
+  grid-column: 1;
+  grid-row: 2;
+}
+.five {
+  grid-column: 2;
+  grid-row: 2;
+}
+.six {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+element.style {
+  padding-left: 20%;
+}
+.paragraph {
+  padding: 10em;
+  width: 55%;
+}
+
+p {
+  text-align: start;
+  margin: 0%;
+  padding: 0%;
+  color: #fff;
+  width: 100%;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-style: italic;
+  font-size: 1.6rem;
+}
+
+element.style {
+  padding-right: 200em;
+  padding-left: 200em;
+  text-align: center;
+}
+.styled {
+  border: 0;
+  line-height: 10;
+  padding: 5%;
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(37, 220, 0);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgb(30, 255, 0);
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
