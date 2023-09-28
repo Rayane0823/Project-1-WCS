@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-=======
+
+
 nav {
   height: 5rem;
   background-color: #5f464b;
@@ -17,7 +17,6 @@ img {
   margin: 1rem;
 }
 
->>>>>>> 820d62bf40528df5a94d6156d214fab450757bcd
 body {
     background-color: #5F464B;
 }
@@ -78,11 +77,9 @@ h2 {
 }
 
 h1 {
-<<<<<<< HEAD
     text-align: center;
     color: #fff;
     margin-top: 30%;
-=======
   text-align: center;
   color: #fff;
   margin-top: 10%;
@@ -145,7 +142,6 @@ element.style {
 .paragraph {
   padding: 10em;
   width: 55%;
->>>>>>> 820d62bf40528df5a94d6156d214fab450757bcd
 }
 
 p {
@@ -164,7 +160,6 @@ h2 {
     margin: 1.5%;
 }
 
-<<<<<<< HEAD
 .parent {
     display: grid;
     grid-template-columns: repeat(1fr, 3) ;
@@ -212,8 +207,6 @@ h2 {
     }
 
 
-=======
->>>>>>> 820d62bf40528df5a94d6156d214fab450757bcd
 .styled {
     border: 5%;
     line-height: 10;
@@ -239,10 +232,7 @@ h2 {
     box-shadow:
     inset -2px -2px 3px rgba(255, 255, 255, 0.6),
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
-<<<<<<< HEAD
 
-}
-=======
 }
 
 header {
@@ -260,4 +250,3 @@ header {
 header {
   min-height: 250px;
 }
->>>>>>> 820d62bf40528df5a94d6156d214fab450757bcd
