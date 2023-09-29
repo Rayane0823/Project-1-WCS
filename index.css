@@ -40,9 +40,12 @@ nav {
 
 
 img {
-  width: 5rem;
-  height: auto;
+  width: 25%;
   margin: 0 1rem;
+}
+
+.fb {
+  width: 4.5rem;
 }
 
 h1 {
