@@ -1,24 +1,13 @@
-let timeRemaining = 15
-const timer = document.getElementById("timer")
-
+const timerElement = document.getElementById("timer");
+let timer = 15;
 
 function timeDecreasing() {
-    let secondes = parseInt(timeRemaining, 10);
-    timer.innerText = timeRemaining;
-    timeRemaining--;
+  timerElement.innerText = timer;
+  timer--;
+
+  if (timer <= 0) {
+    timer = 0;
+  }
 }
 
-setInterval(timeDecreasing, 1000)
-
-
-
-
-
-
-
-
-
-
-
-
-
+setInterval(timeDecreasing, 1000);
