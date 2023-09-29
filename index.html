@@ -1,76 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="index.css" />
-  <title>Project P1</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <!-- !TODO Rendre les images cliquables  -->
-      <img class="logo" src="./Assets/Images/logo.png" alt="image du logo du quizz" />
-      <button type="submit" id="btnSubmit">Jouer</button>
-      <div class="img">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Project P1</title>
+  </head>
+  <body>
+    <header>
+      <nav>
         <!-- !TODO Rendre les images cliquables  -->
-        <img src="Assets/Images/Facebook.png" alt="Facebook" />
-        <img src="images/Twitter.png" alt="Twitter" />
-        <img src="images/Instagram.jpg" alt="Instagram" />
-      </div>
-    </nav>
+        <img
+          class="logo"
+          src="./Assets/Images/logo.png"
+          alt="image du logo du quizz"
+        />
+        <button type="submit" id="btnSubmit">Jouer</button>
+        <div class="img">
+          <!-- !TODO Rendre les images cliquables  -->
+          <img src="Assets/Images/Facebook.png" alt="Facebook" />
+          <img src="images/Twitter.png" alt="Twitter" />
+          <img src="images/Instagram.jpg" alt="Instagram" />
+        </div>
+      </nav>
+      <h1>Bienvenue sur le Wild Quizz</h1>
+      <h2>Quizz Populaires</h2>
+      <a href="indexquestions.html">Ville de Lille</a>
+      <img src="/images/Logo_ville_de_Lille.svg" />
+    </header>
 
-  </header>
+    <main>
+      <div class="paragraph">
+        <p>
+          Préparez-vous à mettre vos connaissances à l'épreuve et à relever des
+          défis passionnants. C'est l'occasion parfaite de tester vos
+          compétences et de découvrir de nouvelles informations. Que le meilleur
+          gagne ! Règles simples : Répondez aux questions avec honnêteté et sans
+          tricher. Vous avez un temps limité pour chaque question, alors restez
+          concentré ! Amusez-vous et apprenez en même temps. Que le quiz
+          commence ! Bonne chance à tous les participants !" N'hésitez pas à
+          personnaliser ce message en fonction du thème de votre quiz et de
+          votre public cible pour créer une atmosphère amusante et engageante.
+        </p>
+      </div>
+      <section>
+        <h2>Nos Quizz</h2>
+        <button class="styled" type="button">Wild Code School</button>
+        <button class="styled" type="button">Culture Générale</button>
+        <button class="styled" type="button">Princesse Dysney</button>
+        <button class="styled" type="button">Rois de France</button>
+        <button class="styled" type="button">Géographie</button>
+      </section>
 
-  <main>
-
-    <h2>Quizz Populaires</h2>
-    <a href="indexquestions.html">Ville de Lille</a>
-    <img src="/images/Logo_ville_de_Lille.svg" style="width: 5em; height: 5em" />
-    <div class="paragraph">
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem
-        tempore cum soluta omnis praesentium placeat sit unde hic assumenda
-        iste, consequuntur corporis earum enim? Vero laborum officia ipsam
-        similique Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Enim quae cupiditate ipsam. Eos, saepe eum deleniti doloremque eaque
-        obcaecati fuga beatae dolor aliquam repellendus minus aspernatur earum
-        sunt? Aspernatur, nemo. Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Ea laboriosam neque quia optio deleniti blanditiis
-        nulla cum nihil incidunt voluptatem omnis error totam velit, quos
-      </p>
-    </div>
-    <section>
-      <h2>Nos Quizz</h2>
-      <div class="two">
-        <button class="favorite styled" type="button">
-          Wild Code School
-        </button>
-      </div>
-      <div class="three">
-        <button class="favorite styled" type="button">
-          Culture Générale
-        </button>
-      </div>
-      <div class="four">
-        <button class="favorite styled" type="button">
-          Princesse Dysney
-        </button>
-      </div>
-      <div class="five">
-        <button class="favorite styled" type="button">Rois de France</button>
-      </div>
-      <div class="six">
-        <button class="favorite styled" type="button">Géographie</button>
-      </div>
-      </div>
-    </section>
-
-    <script src="index.js"></script>
-  </main>
-  <footer></footer>
-</body>
-
+      <script src="index.js"></script>
+    </main>
+    <footer></footer>
+  </body>
 </html>
