@@ -21,17 +21,17 @@ nav {
 }
 
 .logo {
-  width: 5 rem;
-  /* height: auto; */
+  width: 5em;
+  height: 5em;
 }
 
 .btnJouer {
   border-radius: 1rem;
-  margin: 0 0.5rem 1rem;
   background-color: #38d9a9;
+  color: #fff;
   width: 15rem;
   text-align: center;
-}
+  font-size: 3rem;
 
 .imgG {
   height: auto;
