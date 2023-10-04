@@ -16,14 +16,47 @@ setInterval(timeDecreasing, 1000);
 
 const questions = [
   {
-    question: "Quelle est la capitale de la France ?",
-    options: ["Paris", "Londres", "Berlin"],
-    correctAnswer: 0,
+    question: "quelle est la population actuelle de Lille",
+    options: [
+      "300 000 habitants",
+      "500 000 habitants",
+      "800 000 habitants",
+      "1 million d'habitants",
+    ],
+    correctAnswer: 1,
   },
   {
-    question: "Quel est le plus grand océan du monde ?",
-    options: ["Océan Atlantique", "Océan Indien", "Océan Pacifique"],
+    question: "Dans quelle région de la France se trouve Lille ?",
+    options: ["Île-de-France", "Bretagne", "Haut-de-France", "Occitanie"],
     correctAnswer: 2,
+  },
+  {
+    question: "Quel est le nom du fleuve qui traverse Lille ?",
+    options: ["La Seine", "La Loire", "La Deûle", "La Garonne"],
+    correctAnswer: 2,
+  },
+  {
+    question:
+      "Quel est le nom de la célèbre place de Lille, où se trouve l'Hôtel de Ville ?",
+    options: [
+      "Place de la République",
+      "Place du Général de Gaulle (Grand-Place)",
+      "Place de la Bastille",
+      "Place de la Concorde",
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question:
+      "Combien de départements composent la région des Hauts-de-France, où se trouve Lille ?",
+    options: ["2", "3", "4", "5"],
+    correctAnswer: 1,
+  },
+  {
+    question:
+      "Lille est située à proximité d'une frontière d'un pays voisin lequel ?",
+    options: ["Belgique", "Allemagne", "Espagne", "Italie"],
+    correctAnswer: 0,
   },
   // Ajoutez autant de questions que vous le souhaitez
 ];
