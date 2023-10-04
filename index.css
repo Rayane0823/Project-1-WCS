@@ -23,13 +23,26 @@ nav {
 .logo {
   width: 5em;
   height: 5em;
+  align-items: center;
+  margin-left: 0.5rem;
 }
 
 .btnJouer {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+  margin-left: 11rem;
   background-color: #38d9a9;
   width: 15rem;
   text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .imgG {
