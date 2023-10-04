@@ -11,8 +11,6 @@
 header {
   text-align: justify;
   min-height: 250px;
-<<<<<<< HEAD
-=======
 }
 
 nav {
@@ -22,61 +20,10 @@ nav {
   border-radius: 0.5rem;
 }
 
-button {
-  margin: 0 0.5rem 1rem;
-  background-color: #38d9a9;
-}
-
-img {
-  width: 5rem;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem;
-  margin: 1rem;
-}
-
 .logo {
-  width: 3rem;
+  width: 4rem;
   margin: 0.5rem;
   margin: 0.1rem;
-}
-
-h2 {
-  color: #fff;
-  text-align: center;
-  width: 100%;
-  margin: 1rem 0;
-}
-
-header h2 {
-  text-align: left;
-  margin-left: 1rem;
-}
-
-h1 {
-  text-align: center;
-  color: #fff;
-  margin-top: 30%;
-  text-align: center;
-  color: #fff;
-  margin-top: 10%;
-}
-
-.logo {
-  width: auto;
->>>>>>> main
-}
-
-nav {
-  height: 5rem;
-  display: flex;
-  justify-content: space-between;
-  border-radius: 0.5rem;
-}
-
-.logo {
-  width: 4em;
-  margin: 0.5rem;
 }
 
 .btnJouer {
@@ -90,16 +37,32 @@ nav {
 .imgG {
   height: auto;
   width: 20rem;
-  /* display: flex;
-  align-items: center;
-  justify-content: end; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
   border: 2px solid blue;
 }
 
-<<<<<<< HEAD
+h2 {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+header h2 {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-top: 30%;
+  text-align: center;
+  color: #fff;
+  margin-top: 10%;
+}
 h2 {
   color: #fff;
   text-align: center;
@@ -138,25 +101,6 @@ p {
   padding: 1em;
 }
 
-=======
-/* ===== MAIN ===== */
-
-p {
-  text-align: start;
-  margin: 0.5%;
-  padding-top: 5%;
-  color: #fff;
-  width: 100%;
-  font-family: "Helvetica Neue", "Arial", sans-serif;
-  font-style: italic;
-  font-size: 1.6rem;
-}
-
-.paragraph {
-  padding: 1em;
-}
-
->>>>>>> main
 section {
   display: flex;
   flex-wrap: wrap;
