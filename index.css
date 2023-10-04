@@ -23,7 +23,6 @@ nav {
 .logo {
   width: 4rem;
   margin: 0.5rem;
-  margin: 0.1rem;
 }
 
 .btnJouer {
@@ -39,8 +38,7 @@ nav {
   width: 20rem;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  border: 2px solid blue;
+  justify-content: center;
 }
 
 h2 {
