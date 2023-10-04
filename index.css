@@ -28,10 +28,9 @@ nav {
 .btnJouer {
   border-radius: 1rem;
   background-color: #38d9a9;
-  color: #fff;
   width: 15rem;
   text-align: center;
-  font-size: 3rem;
+}
 
 .imgG {
   height: auto;
