@@ -8,7 +8,7 @@
     <title>Wild Quizz</title>
 </head>
 
-<body>
+<body id="Lille-main">
     <nav>
         <img class="logo" src="./Assets/Images/logo.png" ; alt="image du logo du quizz" ; />
         <input type="submit" value="JOUER" id="btnSubmit" />
@@ -21,17 +21,18 @@
     <main>
         <div class="questions-container">
             <div class="questions-counter-timer">
-                <h3 id="counter">Question n° 1/10</h3>
+                <h3 id="questionNumber">Question 1/10</h3>
                 <h3 id="timer">15</h3>
             </div>
             <div id="questions-answer">
-                <h2 id="question">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ipsum lorem ipsum</h2>
+                <h2 id="question">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ipsum lorem ipsum lorem ipsum lorem ipsum ?</h2>
                 <div id="answers-buttons">
-                    <button>Réponse 1</button>
-                    <button>Réponse 2</button>
-                    <button>Réponse 3</button>
-                    <button>Réponse 4</button>
+                    <button class=".answer" id="answer1">Réponse 1</button>
+                    <button class=".answer" id="answer2">Réponse 2</button>
+                    <button class=".answer" id="answer3">Réponse 3</button>
+                    <button class=".answer" id="answer4">Réponse 4</button>
                 </div>
+                <button id="next-question-button">Question Suivante</button>
             </div>
         </div>
     </main>
