@@ -93,7 +93,46 @@ const questions = [
     options: ["Belgique", "Allemagne", "Espagne", "Italie"],
     correctAnswer: 0,
   },
-  // Ajoutez autant de questions que vous le souhaitez
+  {
+    question: "Quel est le nom de la Cathédrale de Lille ?",
+    option: [
+      "Notre Dame de la Garde",
+      "Notre Dame de la Treille",
+      "Notre Dame de l'Annonaal",
+      "La Cathédrale Sainte-Cécile",
+    ],
+    correctAnswers: 1,
+  },
+  {
+    question: "Quel surnom est encore aujourdhui donné à Lille ?",
+    option: [
+      "La capitale des Gaules",
+      "La belle endormie",
+      "La cité des Papes",
+      "La capitale des Flandres",
+    ],
+    correctAnswers: 3,
+  },
+  {
+    question: "Quelle est l'adresse de la WCS Lille ?",
+    option: [
+      "13 rue du Général de Gaule",
+      "124 avenue Montebello",
+      "2 rue Victor Hugo",
+      "on ne sait pas on s'est tous perdu a la rentrée",
+    ],
+    correctAnswers: 3,
+  },
+  {
+    question: "Qui était le maire de Lille de 1973 à 2001 ?",
+    option: [
+      "Pierre Mauroy",
+      "Martine Aubry",
+      "Patrick Kanner",
+      "Augustin Cament",
+    ],
+    correctAnswers: 0,
+  },
 ];
 
 let currentQuestionIndex = 0;
