@@ -127,3 +127,30 @@ nextQuestionButton.addEventListener("click", checkAnswer);
 
 // Afficher la première question au chargement de la page
 displayQuestion();
+
+
+// ===== Resultat =====
+
+function createResponse(results) {
+  if (results >= 0 && results <= 3) {
+  return "text1"
+}
+  else if (results >= 4 && results <= 5) {
+    return "text2"
+  }
+  else if (results >= 6 && results <=7) {
+    return "text3"
+  }
+  else if (results >= 8 && results <= 9) {
+    return "text4"
+  }
+  else{
+    return "text5"
+  };
+    
+  }
+
+ 
+let results=
+ response = createResponse(number)
+ console.log(response)

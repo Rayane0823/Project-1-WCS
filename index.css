@@ -10,28 +10,29 @@
 
 header {
   text-align: justify;
-  min-height: 250px;
+  min-height: 15rem;
 }
 
 nav {
   height: 7rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-radius: 0.5rem;
 }
 
 .logo {
-  width: 5em;
-  height: 5em;
-  align-items: center;
+  width: clamp(5rem, 9vw, 10rem);
+  margin-top: 1%;
   margin-left: 0.5rem;
 }
 
-.btnJouer {
+.BtnJouer {
   border-radius: 0.5rem;
-  margin-left: 11rem;
+  margin-left: 11%;
   background-color: #38d9a9;
-  width: 15rem;
+  width: clamp(86%, 29vw, 900%); /* ou la largeur désirée */
+  height: 8vh; /* ou la hauteur désirée */
   text-align: center;
   color: #fff;
   font-size: 2rem;
@@ -53,26 +54,6 @@ nav {
   justify-content: center;
 }
 
-h2 {
-  color: #fff;
-  text-align: center;
-  width: 100%;
-  margin: 1rem 0;
-}
-
-header h2 {
-  text-align: left;
-  margin-left: 1rem;
-}
-
-h1 {
-  text-align: center;
-  color: #fff;
-  margin-top: 30%;
-  text-align: center;
-  color: #fff;
-  margin-top: 10%;
-}
 h2 {
   color: #fff;
   text-align: center;
@@ -181,4 +162,12 @@ section {
 #question {
   margin-left: 3em;
   margin-right: 3em;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 2rem;
+  background-color: #5f464b;
+  color: #fff;
+  text-align: center;
 }
