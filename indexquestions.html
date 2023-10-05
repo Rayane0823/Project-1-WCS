@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Home.css" />
-    <link rel="stylesheet" href="Play.css"/>
+    <link rel="stylesheet" href="index.css"/>
     <title>Wild Quizz</title>
   </head>
 
@@ -25,10 +24,21 @@
       </div>
     </nav>
     <main>
-      <div class="questions-container">
-        <div class="questions-counter-timer">
-          <h3 id="counter">Question n° 1/10</h3>
-          <h3 id="timer">15</h3>
+        <div class="questions-container">
+            <div class="questions-counter-timer">
+                <h3 id="questionNumber">Question 1/10</h3>
+                <h3 id="timer">15</h3>
+            </div>
+            <div id="questions-answer">
+                <h2 id="question">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ipsum lorem ipsum lorem ipsum lorem ipsum ?</h2>
+                <div id="answers-buttons">
+                    <button class=".answer" id="answer1">Réponse 1</button>
+                    <button class=".answer" id="answer2">Réponse 2</button>
+                    <button class=".answer" id="answer3">Réponse 3</button>
+                    <button class=".answer" id="answer4">Réponse 4</button>
+                </div>
+                <button id="next-question-button">Question Suivante</button>
+            </div>
         </div>
         <div id="questions-answer">
           <h2 id="question">
@@ -52,6 +62,6 @@
         </div>
       </div>
     </main>
-    <script type="text/javascript" src="Script.js"></script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
