@@ -199,6 +199,7 @@ nextQuestionButton.addEventListener("click", checkAnswer),
 // Afficher la première question au chargement de la page
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 displayQuestion();
 
 
@@ -233,3 +234,6 @@ displayQuestion()
 =======
 displayQuestion()
 >>>>>>> origin/main
+=======
+displayQuestion()
+>>>>>>> main
