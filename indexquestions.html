@@ -1,42 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Home.css" />
+    <link rel="stylesheet" href="Play.css"/>
     <title>Wild Quizz</title>
-</head>
+  </head>
 
 <body id="Lille-main">
     <nav>
-        <img class="logo" src="./Assets/Images/logo.png" ; alt="image du logo du quizz" ; />
-        <input type="submit" value="JOUER" id="btnSubmit" />
-        <div class="img">
-            <img src="Assets/Images/Facebook.png" alt="Facebook" />
-            <img src="images/Twitter.png" alt="Twitter" />
-            <img src="images/Instagram.jpg" alt="Instagram" />
-        </div>
+      <img
+        class="logo"
+        src="./Assets/Images/logo.png"
+        ;
+        alt="image du logo du quizz"
+        ;
+      />
+      <input type="submit" value="JOUER" id="btnSubmit" />
+      <div class="img">
+        <img src="Assets/Images/Facebook.png" alt="Facebook" />
+        <img src="images/Twitter.png" alt="Twitter" />
+        <img src="images/Instagram.jpg" alt="Instagram" />
+      </div>
     </nav>
     <main>
-        <div class="questions-container">
-            <div class="questions-counter-timer">
-                <h3 id="questionNumber">Question 1/10</h3>
-                <h3 id="timer">15</h3>
-            </div>
-            <div id="questions-answer">
-                <h2 id="question">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ipsum lorem ipsum lorem ipsum lorem ipsum ?</h2>
-                <div id="answers-buttons">
-                    <button class=".answer" id="answer1">Réponse 1</button>
-                    <button class=".answer" id="answer2">Réponse 2</button>
-                    <button class=".answer" id="answer3">Réponse 3</button>
-                    <button class=".answer" id="answer4">Réponse 4</button>
-                </div>
-                <button id="next-question-button">Question Suivante</button>
-            </div>
+      <div class="questions-container">
+        <div class="questions-counter-timer">
+          <h3 id="counter">Question n° 1/10</h3>
+          <h3 id="timer">15</h3>
         </div>
+        <div id="questions-answer">
+          <h2 id="question">
+            Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ipsum
+            lorem ipsum
+          </h2>
+            <div id="question-container">
+              <p id="question-text">
+                Cliquez sur "Question Suivante" pour commencer.
+              </p>
+              <ul id="options-list">
+              <!-- Les options seront ajoutées ici -->
+            <div id="answers-buttons"></div>
+            <button id="AnswerA"></button>
+            <button id="AnswerB"></button>
+            <button id="AnswerC"></button>
+            <button id="AnswerD"></button>
+            <div id="results-container"></div>
+          </ul>
+          <button id="next-question-button">Question Suivante</button>
+        </div>
+      </div>
     </main>
-    <script type="text/javascript" src="index.js"></script>
-</body>
-
+    <script type="text/javascript" src="Script.js"></script>
+  </body>
 </html>

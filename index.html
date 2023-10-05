@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="index.css" />
-  <title>Wild Quizz</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <!-- !TODO Rendre les images cliquables  -->
-      <img class="logo" src="./Assets/Images/logo.png" alt="image du logo du quizz" />
-      <button type="submit" id="btnSubmit">Jouer</button>
-      <div class="img">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="indexquestions.html">
+    <title>Project P1</title>
+  </head>
+  <body>
+    <header>
+      <nav>
         <!-- !TODO Rendre les images cliquables  -->
-        <img src="Assets/Images/Facebook.png" alt="Facebook" />
-        <img src="images/Twitter.png" alt="Twitter" />
-        <img src="images/Instagram.jpg" alt="Instagram" />
-      </div>
-    </nav>
-    <div class="Popular-Quizz">
-      <h2 class="Popular-title" id="Popular-title">   Quizz Populaires</h2>
-      <div id="lille-popular-bloc">
-        <a href="indexquestions.html" id="Lille-popular"></a>
-        <p id="lille-popular-text">Ville de Lille</p>
-      </div>
-      <div id="Disney-popular-bloc">
-<a href="indexquestions.html" id="Disney-popular"></a>
-        <p id="disney-popular-text">Princesses Disney</p>
-      </div>
-      <div id="WCS-popular-bloc">
-        <a href="indexquestions.html" id="WCS-popular"></a>
-        <p id="WCS-popular-text">Wild Code School</p>
-      </div>
-      <div id="Culture-popular-bloc">
-<a href="indexquestions.html" id="Culture-popular"></a>
-        <p id="Culture-popular-text">Culture Générale</p>
-      </div>
-    </div>
-    </div>
-  </header>
+        <img
+          class="logo"
+          src="./Assets/Images/logo.png"
+          alt="image du logo du quizz"
+        />
+        <button class="btnJouer" type="button">JOUER</button>
+        <div class="imgG">
+          <a href="https://fr-fr.facebook.com/" alt="Site de Facebook">
+            <img
+              src="./Assets/Images/Facebook.svg"
+              alt="Facebook"
+              style="width: 7.2rem; justify-content: center; margin-right: 1rem"
+            />
+          </a>
+          <a href="https://twitter.com/?lang=fr" alt="Site de Twitter">
+            <img
+              src="./Assets/Images/twitter.svg"
+              alt="Twitter"
+              style="width: 50px; height: 50px"
+            />
+          </a>
+          <a href="https://www.instagram.com/" alt="Site d'Instagram">
+            <img
+              src="./Assets/Images/instagram.svg"
+              alt="Instagram"
+              style="width: 50px; height: 50px"
+            />
+          </a>
+     
+        <button type="submit" id="btnSubmit">Jouer</button>
+        <div class="img">
+          <!-- !TODO Rendre les images cliquables  -->
+          <img src="Assets/Images/Facebook.png" alt="Facebook" />
+          <img src="images/Twitter.png" alt="Twitter" />
+          <img src="images/Instagram.jpg" alt="Instagram" />
+        </div>
+      </nav>
+      <h1>Bienvenue sur le Wild Quizz</h1>
+    </header>
 
-  <main>
+    <main>
+      <div class="paragraph">
+        <p>
+          Préparez-vous à mettre vos connaissances à l'épreuve et à relever des
+          défis passionnants. C'est l'occasion parfaite de tester vos
+          compétences et de découvrir de nouvelles informations. Que le meilleur
+          gagne ! Règles simples : Répondez aux questions avec honnêteté et sans
+          tricher. Vous avez un temps limité pour chaque question, alors restez
+          concentré ! Amusez-vous et apprenez en même temps. Que le quiz
+          commence ! Bonne chance à tous les participants !
+        </p>
+      </div>
+      <section>
+        <h2>Nos Quizz</h2>
+        <button class="styled" type="button">Wild Code School</button>
+        <button class="styled" type="button">Culture Générale</button>
+        <button class="styled" type="button">Princesse Disney</button>
+        <button class="styled" type="button">Rois de France</button>
+        <button class="styled" type="button">Géographie</button>
+      </section>
 
-    <div class="paragraph">
-      <p>
-        Préparez-vous à mettre vos connaissances à l'épreuve et à relever des
-        défis passionnants. C'est l'occasion parfaite de tester vos
-        compétences et de découvrir de nouvelles informations. Que le meilleur
-        gagne ! Règles simples : Répondez aux questions avec honnêteté et sans
-        tricher. Vous avez un temps limité pour chaque question, alors restez
-        concentré ! Amusez-vous et apprenez en même temps. Que le quiz
-        commence ! Bonne chance à tous les participants !
-      </p>
-    </div>
-    <section>
-      <h2>Nos Quizz</h2>
-      <button class="styled" type="button">Wild Code School</button>
-      <button class="styled" type="button">Culture Générale</button>
-      <button class="styled" type="button">Princesse Disney</button>
-      <button class="styled" type="button">Rois de France</button>
-      <button class="styled" type="button">Géographie</button>
-    </section>
-
-    <script src="index.js"></script>
-  </main>
-  <footer></footer>
-</body>
-
+      <script src="Script.js"></script>
+    </main>
+    <footer></footer>
+  </body>
 </html>
