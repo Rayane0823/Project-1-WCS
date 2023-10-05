@@ -29,7 +29,7 @@ function increaseQuestionNumber() {
     questionNumberElement.textContent = "Question " + questionNumber + "/10"
   }
   else {
-    showResults
+    showcorrectAnswers
   }
 }
 nextButton.addEventListener("click", increaseQuestionNumber);
@@ -141,7 +141,7 @@ let ,correctAnswers = 0;
 const questionText = document.getElementById("question-text");
 const optionsList = document.getElementById("options-list");
 const nextQuestionButton = document.getElementById("next-question-button");
-const resultsContainer = document.getElementById("results-container");
+const correctAnswersContainer = document.getElementById("correctAnswers-container");
 function displayQuestion() {
   const currentQuestion = questions[currentQuestionIndex];
   questionText.textContent = currentQuestion.question;
@@ -184,14 +184,14 @@ function checkAnswer() {
   if (currentQuestionIndex < questions.length) {
     displayQuestion();
   } else {
-    showResults();
+    showcorrectAnswers();
   }
 };
-function showResults() {
+function showcorrectAnswers() {
   questionText.textContent = "Questionnaire terminé !";
   optionsList.innerHTML = "";
   nextQuestionButton.style.display = "none";
-  resultsContainer.textContent = `Score : ${correctAnswers} / ${questions.length}`;
+  correctAnswersContainer.textContent = `Score : ${correctAnswers} / ${questions.length}`;
 };
 
 nextQuestionButton.addEventListener("click", checkAnswer),
@@ -205,17 +205,17 @@ displayQuestion();
 
 // ===== Resultat =====
 
-function createResponse(results) {
-  if (results >= 0 && results <= 3) {
+function createResponse(correctAnswers) {
+  if (correctAnswers >= 0 && correctAnswers <= 3) {
   return "text1"
 }
-  else if (results >= 4 && results <= 5) {
+  else if (correctAnswers >= 4 && correctAnswers <= 5) {
     return "text2"
   }
-  else if (results >= 6 && results <=7) {
+  else if (correctAnswers >= 6 && correctAnswers <=7) {
     return "text3"
   }
-  else if (results >= 8 && results <= 9) {
+  else if (correctAnswers >= 8 && correctAnswers <= 9) {
     return "text4"
   }
   else{
@@ -225,7 +225,7 @@ function createResponse(results) {
   }
 
  
-let results=
+let correctAnswers=
  response = createResponse(number)
  console.log(response)
 =======
