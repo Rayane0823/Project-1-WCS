@@ -11,18 +11,16 @@
 
   <body>
     <nav>
-      <img
-        class="logo"
-        src="./Assets/Images/logo.png"
-        ;
-        alt="image du logo du quizz"
-        ;
-      />
-      <input type="submit" value="JOUER" id="btnSubmit" />
-      <div class="img">
-        <img src="Assets/Images/Facebook.png" alt="Facebook" id="Facebook"/>
-        <img src="Assets/images/twitter.svg" alt="Twitter" id="Twitter"/>
-        <img src="Assets/images/instagram.svg" alt="Instagram" id="Instagram"/>
+      <img class="logo" src="./Assets/Images/logo.png" alt="image du logo du quizz" /></a>
+  <input type="submit" value="JOUER" id="btnSubmit" />
+          <div class="img">
+            <a href="https://www.Facebook.com">
+            <img src="facebook1.webp" alt="Facebook" id="Facebook" /></a>
+            <a href="https://www.Twitter.com">
+            <img src="Assets/images/twitter.svg" alt="Twitter" id="Twitter" /></a>
+            <a href="https://www.Instagram.com">
+            <img src="Assets/images/instagram.svg" alt="Instagram" id="Instagram" /></a>
+      </a>
       </div>
     </nav>
     <div class="Popular-Quizz">
@@ -45,7 +43,13 @@
       </div>
     </div>
     </div>
-    <main>
+    <main id="mainquestions">
+      <div>
+        <h1 id=Lille-title-questions>Quiz : Ville de Lille</h1>
+        <div class="paragraph">
+          <p id="home-message">
+            Connaissez-vous bien la ville de Lille ? Ce quiz vous propose de répondre à une série de questions qui ont pour point commun la jolie ville de Lille dans le nord de la France. Que vous soyez originaire de Lille ou non il est possible de répondre à ce quiz qui revient sur les lieux emblématiques de la ville, les différents quartiers, les personnages historiques, etc. 
+      </div>
         <div class="questions-container">
             <div class="questions-counter-timer">
                 <h3 id="questionNumber">Question 1/10</h3>
@@ -60,12 +64,19 @@
                     <button class="answer" id="answer4">Réponse 4</button>
                 </div>
                 <button id="next-question-button">Question Suivante</button>
+                
             </div>
           </div>
-          
+          <div id="score">
+            <h1 id="results">Score : 1/10</h1>
+            <p id="Results-text">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+          </div>
         </div>
       </div>
     </main>
+    <footer>
+      
+    </footer>
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
