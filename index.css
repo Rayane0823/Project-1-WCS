@@ -136,6 +136,7 @@ header h2 {
 
 /* ===== MAIN ===== */
 
+
 .Popular-Quizz {
   background-color: #5f464b;
   margin-top: 0;
@@ -147,6 +148,23 @@ width: 100%;
   overflow: auto;
   height: 12vh;
 }
+
+ button {
+   font-size: 1rem;
+   text-align: center;
+   color: #fff;
+   text-shadow: 1px 1px 1px #000;
+   border-radius: 10px;
+   background-color: #38d9a9;
+   background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+   box-shadow:
+     inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+     width: clamp(10rem, 90%, 20rem); /* ou la largeur désirée */
+     height: 5vh; /* ou la hauteur désirée */
+   
+ }
+
 
 #Popular-title {
 display: flex;
@@ -414,9 +432,9 @@ background-color: grey;
 }
 
 .questions-container {
-  margin-left: 15em;
+margin: auto;
   margin-bottom: 15em;
-  margin-right: 15em;
+ 
   margin-top: 10vh;
   padding-top: 0;
   padding-bottom: 2em;
@@ -424,9 +442,6 @@ background-color: grey;
   padding: 3vh;
   
   border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: #5f464b;
   box-shadow: #2c2745 0px 4px 30px -10px;
 }
@@ -461,9 +476,6 @@ background-color: grey;
 }
 
 #options-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 5em);
 padding-top: 4vh;
 padding-bottom: 2vh
 
@@ -512,15 +524,40 @@ font-weight: 700;
 }
 
 @media screen and (max-width: 819px) {
-
 }
+ .styled:active {
+   box-shadow:
+     inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+ }
 
-@media screen and (max-width: 1145px) {
-  #options-list {
-    display: flex;
-    flex-direction: column;
-  }
-}
+ .questions-container {
+  text-align: center;
+  color: #fff;
+ }
+
+ /*  ===== VERIFIER QUELLE PAGE ? ===== */
+
+
+ /* Menu questions */
+
+
+
+
+
+ /*  ===== VERIFIER QUELLE PAGE ? ===== */
+
+
+ /* Menu questions */
+
+ .questions-counter-timer {
+   margin-left: 2em;
+   margin-right: 2em;
+   display: flex;
+ }
+
+
+
 
 @media screen and (max-width: 780px) {
  .questions-container {
@@ -568,8 +605,14 @@ margin-top: 2vh;
   margin-left: 3vh;
 }
 
-
-
+#our-quiz {
+  color: #5f464b;
+  font-family: 'young-serif-regular';
+  margin-bottom: 7vh;
+  margin-top: 10vh;
+  text-align: left;
+  margin-left: 3vh;
+}
 
 
 
