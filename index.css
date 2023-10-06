@@ -172,6 +172,7 @@ h1 {
 
 /* ===== MAIN ===== */
 
+<<<<<<< HEAD
 .Popular-Quizz {
   background-color: #5f464b;
   margin-top: 0;
@@ -182,6 +183,24 @@ h1 {
 width: 100%;
   overflow: auto;
 }
+=======
+ button {
+   font-size: 1rem;
+   text-align: center;
+   color: #fff;
+   text-shadow: 1px 1px 1px #000;
+   border-radius: 10px;
+   background-color: #38d9a9;
+   background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+   box-shadow:
+     inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+     width: clamp(10rem, 90%, 20rem); /* ou la largeur désirée */
+     height: 5vh; /* ou la hauteur désirée */
+    text-align: center;
+   
+ }
+>>>>>>> True-False_branch
 
 #Popular-title {
 display: flex;
@@ -497,7 +516,33 @@ font-weight: 700;
 
 @media screen and (max-width: 819px) {
 
+<<<<<<< HEAD
 }
+=======
+ .styled:active {
+   box-shadow:
+     inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+ }
+
+ .questions-container {
+  text-align: center;
+  color: #fff;
+ }
+
+ /*  ===== VERIFIER QUELLE PAGE ? ===== */
+
+
+ /* Menu questions */
+
+ .questions-counter-timer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-left: 2em;
+   margin-right: 2em;
+ }
+>>>>>>> True-False_branch
 
 @media screen and (max-width: 1145px) {
   #options-list {
@@ -544,3 +589,10 @@ nav {
 
 
 
+<<<<<<< HEAD
+=======
+ #question {
+   margin-left: 3em;
+   margin-right: 3em;
+ }
+>>>>>>> True-False_branch

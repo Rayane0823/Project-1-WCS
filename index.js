@@ -483,25 +483,26 @@ function displayQuestion() {
     optionRadio.name = "answer";
     optionRadio.value = index;
     optionRadio.id = `option${index}`;
-
     const optionLabel = document.createElement("label");
     optionLabel.textContent = option;
     optionLabel.setAttribute("for", `option${index}`);
-
     listItem.appendChild(optionRadio);
     listItem.appendChild(optionLabel);
     optionsList.appendChild(listItem);
+<<<<<<< HEAD
   })
 };
 
+=======
+  });
+}
+>>>>>>> True-False_branch
 function checkAnswer() {
   const selectedOption = document.querySelector('input[name="answer"]:checked');
-
   if (!selectedOption) {
     alert("Veuillez sélectionner une réponse.");
     return;
   }
-
   const userAnswer = parseInt(selectedOption.value);
   const currentQuestion = questions[currentQuestionIndex];
 
@@ -516,6 +517,7 @@ function checkAnswer() {
   } else {
     showResults();
   }
+<<<<<<< HEAD
 };
 function showResults() { 
   optionsList.innerHTML = "";
@@ -580,3 +582,345 @@ function timerOutNoAnswer() {
 
 
 // Quand on appuie sur "question suivante", les boutons ne sont plus affichés en rouge/vert.
+=======
+}
+// Montrer le résultat a la fin du questionnaire
+function showResults() {
+  questionText.textContent = "Questionnaire terminé !";
+  optionsList.innerHTML = "";
+  nextQuestionButton.style.display = "none";
+  resultsContainer.textContent = `Score : ${correctAnswers} / ${questions.length}`;
+}
+nextQuestionButton.addEventListener("click", checkAnswer);
+// Afficher la première question au chargement de la page
+displayQuestion();
+
+// Récupérez l'élément div par son ID
+// Question n°1
+const question1 = [0];
+const rightWrong1 = document.querySelectorAll(".answer");
+
+rightWrong1[1].addEventListener("click", changeRightColor);
+rightWrong1[0].addEventListener("click", changeWrongColor1);
+rightWrong1[2].addEventListener("click", changeWrongColor2);
+rightWrong1[3].addEventListener("click", changeWrongColor3);
+
+function changeRightColor() {
+  rightWrong1[1].style.backgroundColor = "Green";
+
+  goodAnswer.play();
+}
+
+function changeWrongColor1() {
+  rightWrong1[1].style.backgroundColor = "Green";
+  rightWrong1[0].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor2() {
+  rightWrong1[1].style.backgroundColor = "Green";
+  rightWrong1[2].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor3() {
+  rightWrong1[1].style.backgroundColor = "Green";
+  rightWrong1[3].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+// Question n°2
+const question2 = [1];
+const rightWrong2 = document.querySelectorAll(".answer");
+
+rightWrong2[2].addEventListener("click", changeRightColor);
+rightWrong2[0].addEventListener("click", changeWrongColor1);
+rightWrong2[1].addEventListener("click", changeWrongColor2);
+rightWrong2[3].addEventListener("click", changeWrongColor3);
+
+function changeRightColor() {
+  rightWrong2[2].style.backgroundColor = "Green";
+  goodAnswer.play();
+}
+
+function changeWrongColor1() {
+  rightWrong2[2].style.backgroundColor = "Green";
+  rightWrong2[0].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor2() {
+  rightWrong2[2].style.backgroundColor = "Green";
+  rightWrong2[1].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor3() {
+  rightWrong2[2].style.backgroundColor = "Green";
+  rightWrong2[3].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+// Question n°3
+const question3 = [2];
+const rightWrong3 = document.querySelectorAll(".answer");
+
+rightWrong3[2].addEventListener("click", changeRightColor);
+rightWrong3[0].addEventListener("click", changeWrongColor1);
+rightWrong3[1].addEventListener("click", changeWrongColor2);
+rightWrong3[3].addEventListener("click", changeWrongColor3);
+
+function changeRightColor() {
+  rightWrong3[2].style.backgroundColor = "Green";
+
+  goodAnswer.play();
+}
+
+function changeWrongColor1() {
+  rightWrong3[2].style.backgroundColor = "Green";
+  rightWrong3[0].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor2() {
+  rightWrong3[2].style.backgroundColor = "Green";
+  rightWrong3[1].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor3() {
+  rightWrong3[2].style.backgroundColor = "Green";
+  rightWrong3[3].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+// Question n°4
+const question4 = [3];
+const rightWrong4 = document.querySelectorAll(".answer");
+
+rightWrong4[1].addEventListener("click", changeRightColor);
+rightWrong4[0].addEventListener("click", changeWrongColor1);
+rightWrong4[2].addEventListener("click", changeWrongColor2);
+rightWrong4[3].addEventListener("click", changeWrongColor3);
+
+function changeRightColor() {
+  rightWrong4[1].style.backgroundColor = "Green";
+
+  goodAnswer.play();
+}
+
+function changeWrongColor1() {
+  rightWrong4[1].style.backgroundColor = "Green";
+  rightWrong4[0].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor2() {
+  rightWrong4[1].style.backgroundColor = "Green";
+  rightWrong4[2].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor3() {
+  rightWrong4[1].style.backgroundColor = "Green";
+  rightWrong4[3].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+// Question n°5
+const question5 = [4];
+const rightWrong5 = document.querySelectorAll(".answer");
+
+rightWrong5[1].addEventListener("click", changeRightColor);
+rightWrong5[0].addEventListener("click", changeWrongColor1);
+rightWrong5[2].addEventListener("click", changeWrongColor2);
+rightWrong5[3].addEventListener("click", changeWrongColor3);
+
+function changeRightColor() {
+  rightWrong5[1].style.backgroundColor = "Green";
+
+  goodAnswer.play();
+}
+
+function changeWrongColor1() {
+  rightWrong5[1].style.backgroundColor = "Green";
+  rightWrong5[0].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor2() {
+  rightWrong5[1].style.backgroundColor = "Green";
+  rightWrong5[2].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor3() {
+  rightWrong5[1].style.backgroundColor = "Green";
+  rightWrong5[3].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+// Question n°6
+const question6 = [5];
+const rightWrong6 = document.querySelectorAll(".answer");
+
+rightWrong6[2].addEventListener("click", changeRightColor);
+rightWrong6[0].addEventListener("click", changeWrongColor1);
+rightWrong6[1].addEventListener("click", changeWrongColor2);
+rightWrong6[3].addEventListener("click", changeWrongColor3);
+
+function changeRightColor() {
+  rightWrong6[2].style.backgroundColor = "Green";
+
+  goodAnswer.play();
+}
+
+function changeWrongColor1() {
+  rightWrong6[2].style.backgroundColor = "Green";
+  rightWrong6[0].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor2() {
+  rightWrong6[2].style.backgroundColor = "Green";
+  rightWrong6[1].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor3() {
+  rightWrong6[2].style.backgroundColor = "Green";
+  rightWrong6[3].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+// Question n°7
+const question7 = [6];
+const rightWrong7 = document.querySelectorAll(".answer");
+
+rightWrong7[1].addEventListener("click", changeRightColor);
+rightWrong7[0].addEventListener("click", changeWrongColor1);
+rightWrong7[2].addEventListener("click", changeWrongColor2);
+rightWrong7[3].addEventListener("click", changeWrongColor3);
+
+function changeRightColor() {
+  rightWrong7[1].style.backgroundColor = "Green";
+
+  goodAnswer.play();
+}
+
+function changeWrongColor1() {
+  rightWrong7[1].style.backgroundColor = "Green";
+  rightWrong7[0].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor2() {
+  rightWrong7[1].style.backgroundColor = "Green";
+  rightWrong7[2].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor3() {
+  rightWrong7[1].style.backgroundColor = "Green";
+  rightWrong7[3].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+// Question n°8
+const question8 = [7];
+const rightWrong8 = document.querySelectorAll(".answer");
+
+rightWrong8[3].addEventListener("click", changeRightColor);
+rightWrong8[0].addEventListener("click", changeWrongColor1);
+rightWrong8[1].addEventListener("click", changeWrongColor2);
+rightWrong8[2].addEventListener("click", changeWrongColor3);
+
+function changeRightColor() {
+  rightWrong8[3].style.backgroundColor = "Green";
+
+  goodAnswer.play();
+}
+
+function changeWrongColor1() {
+  rightWrong8[3].style.backgroundColor = "Green";
+  rightWrong8[0].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor2() {
+  rightWrong8[3].style.backgroundColor = "Green";
+  rightWrong8[1].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor3() {
+  rightWrong8[3].style.backgroundColor = "Green";
+  rightWrong8[2].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+// Question n°9
+const question9 = [8];
+const rightWrong9 = document.querySelectorAll(".answer");
+
+rightWrong9[3].addEventListener("click", changeRightColor);
+rightWrong9[0].addEventListener("click", changeWrongColor1);
+rightWrong9[1].addEventListener("click", changeWrongColor2);
+rightWrong9[2].addEventListener("click", changeWrongColor3);
+
+function changeRightColor() {
+  rightWrong9[3].style.backgroundColor = "Green";
+  goodAnswer.play();
+}
+
+function changeWrongColor1() {
+  rightWrong9[3].style.backgroundColor = "Green";
+  rightWrong9[0].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor2() {
+  rightWrong9[3].style.backgroundColor = "Green";
+  rightWrong9[1].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor3() {
+  rightWrong9[3].style.backgroundColor = "Green";
+  rightWrong9[2].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+// Question n°10
+const question10 = [9];
+const rightWrong10 = document.querySelectorAll(".answer");
+
+rightWrong10[0].addEventListener("click", changeRightColor);
+rightWrong10[1].addEventListener("click", changeWrongColor1);
+rightWrong10[2].addEventListener("click", changeWrongColor2);
+rightWrong10[3].addEventListener("click", changeWrongColor3);
+
+function changeRightColor() {
+  rightWrong10[0].style.backgroundColor = "Green";
+
+  goodAnswer.play();
+}
+
+function changeWrongColor1() {
+  rightWrong10[0].style.backgroundColor = "Green";
+  rightWrong10[1].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor2() {
+  rightWrong10[0].style.backgroundColor = "Green";
+  rightWrong10[2].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+
+function changeWrongColor3() {
+  rightWrong10[0].style.backgroundColor = "Green";
+  rightWrong10[3].style.backgroundColor = "Red";
+  wrongAnswer.play();
+}
+>>>>>>> True-False_branch
