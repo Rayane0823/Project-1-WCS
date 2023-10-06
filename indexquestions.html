@@ -10,39 +10,44 @@
   </head>
 
   <body>
-    <nav>
-      <img class="logo" src="./Assets/Images/logo.png" alt="image du logo du quizz" /></a>
-  <input type="submit" value="JOUER" id="btnSubmit" />
-          <div class="img">
-            <a href="https://www.Facebook.com">
-            <img src="facebook1.webp" alt="Facebook" id="Facebook" /></a>
-            <a href="https://www.Twitter.com">
-            <img src="Assets/images/twitter.svg" alt="Twitter" id="Twitter" /></a>
-            <a href="https://www.Instagram.com">
-            <img src="Assets/images/instagram.svg" alt="Instagram" id="Instagram" /></a>
-      </a>
+    <header>
+      <nav>
+        <img class="logo"src="./Assets/Images/logo.png" alt="image du logo du quizz" />
+        <button type="button" id="btnSubmit" >JOUER</button>
+        <div class="img">
+          <!-- !TODO Rendre les images cliquables  -->
+          <a href="https://www.Facebook.com">
+            <img src="./Assets/Images/2021_Facebook_icon.svg.png" alt="Facebook" class="Socials" id="Facebook" />
+          </a>
+          <a href="https://www.Twitter.com">
+            <img src="Assets/images/twitter.svg" alt="Twitter" class="Socials" id="Twitter" />
+          </a>
+          <a href="https://www.Instagram.com">
+            <img src="Assets/images/instagram.svg" alt="Instagram" class="Socials" id="Instagram" />
+          </a>
+        </div>
+      </nav>
+      <div class="Popular-Quizz">
+        <h2 class="Popular-title" id="Popular-title">   Quizz Populaires</h2>
+        <div id="lille-popular-bloc">
+          <a href="indexquestions.html" id="Lille-popular"></a>
+          <p class="popular-text" id="lille-popular-text">Ville de Lille</p>
+        </div>
+        <div id="Disney-popular-bloc">
+  <a href="indexquestions.html" id="Disney-popular"></a>
+          <p class="popular-text" id="disney-popular-text">Princesses Disney</p>
+        </div>
+        <div id="WCS-popular-bloc">
+          <a href="indexquestions.html" id="WCS-popular"></a>
+          <p class="popular-text" id="WCS-popular-text">Wild Code School</p>
+        </div>
+        <div id="Culture-popular-bloc">
+  <a href="indexquestions.html" id="Culture-popular"></a>
+          <p class="popular-text" id="Culture-popular-text">Culture Générale</p>
+        </div>
       </div>
-    </nav>
-    <div class="Popular-Quizz">
-      <h2 class="Popular-title" id="Popular-title">   Quizz Populaires</h2>
-      <div id="lille-popular-bloc">
-        <a href="indexquestions.html" id="Lille-popular"></a>
-        <p class="popular-text" id="lille-popular-text">Ville de Lille</p>
       </div>
-      <div id="Disney-popular-bloc">
-<a href="indexquestions.html" id="Disney-popular"></a>
-        <p class="popular-text" id="disney-popular-text">Princesses Disney</p>
-      </div>
-      <div id="WCS-popular-bloc">
-        <a href="indexquestions.html" id="WCS-popular"></a>
-        <p class="popular-text" id="WCS-popular-text">Wild Code School</p>
-      </div>
-      <div id="Culture-popular-bloc">
-<a href="indexquestions.html" id="Culture-popular"></a>
-        <p class="popular-text" id="Culture-popular-text">Culture Générale</p>
-      </div>
-    </div>
-    </div>
+    </header>
     <main id="mainquestions">
       <div>
         <h1 id=Lille-title-questions>Quiz : Ville de Lille</h1>
