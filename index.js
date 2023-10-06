@@ -82,6 +82,7 @@ const optionsElement = document.getElementById("options-list");
 const answerButtons = document.querySelectorAll(".answer");
 const scoreElement = document.getElementById("score");
 
+
 // Afficher les questions / Afficher le résultat /Afficher le bouton "question suivante" uniquement après avoir répondu.
 
 function displayQuestion() {
@@ -101,26 +102,28 @@ function displayQuestion() {
     questionElement.textContent = "Votre score est de : " + score + " / 10";
     optionsElement.style.display = "none"; // Masquer les options de réponse
     scoreElement.style.display = "block"; // Afficher le score
+  
   }
   nextButton.style.display = "none";
 }
 
-// function showCorrectAnswer() {} //////////////////////
+
 
 // Fonction bonne réponse = vert / mauvaise = rouge
 function compareAnswer() {
-    const userAnswer = this.textContent;
-    const correctAnswer = correctAnswers[currentQuestion];
-
-    if (userAnswer === correctAnswer) {
-        this.style.color = "green";
-        score++
-    } else {
-        this.style.color = "red";
-        showCorrectAnswer();
-    }
-   timerStop();
-    nextButton.style.display = "block";
+  const userAnswer = this.textContent;
+  const correctAnswer = correctAnswers[currentQuestion];
+  
+  if (userAnswer === correctAnswer) {
+    this.style.color = "green";
+    score++
+  } else {
+    this.style.color = "red";
+    const correctAnswerIndex = options[currentQuestion].indexOf(correctAnswer);
+    answerButtons[correctAnswerIndex].style.color = "green";
+  }
+  timerStop();
+  nextButton.style.display = "block";
 }
 
 nextButton.addEventListener("click", function() {
@@ -133,6 +136,10 @@ nextButton.addEventListener("click", function() {
     timerReset(); 
   } else {
     timerDisappear();
+   questionNumberElement.style.display = "none";
+    questionElement.textContent = "Votre score est de : " + score + " / 10";
+  optionsElement.style.display = "none";
+
   }
   nextButton.style.display = "none";
 });
@@ -164,3 +171,7 @@ function showCorrectAnswer() {
     nextButton.style.display = "block"; 
   }
 }
+
+
+// Afficher le résultat à la fin du quiz
+
