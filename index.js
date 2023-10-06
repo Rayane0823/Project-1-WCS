@@ -27,9 +27,7 @@ function increaseQuestionNumber() {
     questionNumber++
     questionNumberElement.textContent = "Question " + questionNumber + "/10"
   }
-  else {
-    showResults
-  }
+
 }
 nextButton.addEventListener("click", increaseQuestionNumber);
 
@@ -83,6 +81,7 @@ const answerButtons = document.querySelectorAll(".answer");
 const scoreElement = document.getElementById("score");
 
 
+
 // Afficher les questions / Afficher le résultat /Afficher le bouton "question suivante" uniquement après avoir répondu.
 
 function displayQuestion() {
@@ -93,13 +92,13 @@ function displayQuestion() {
       button.textContent = options[currentQuestion][index];
       button.removeEventListener("click", compareAnswer);
       button.addEventListener("click", compareAnswer);
-      scoreElement.style.display = "none"
+      scoreElement.style.display = "none";
     });
 
     questionNumberElement.textContent = "Question " + (currentQuestion + 1) + "/10";
   } else {
     // Toutes les questions ont été répondues, afficher le score
-    questionElement.textContent = "Votre score est de : " + score + " / 10";
+    questionElement.textContent = "Votre score est de :" +  " 0" + score + " / 10";
     optionsElement.style.display = "none"; // Masquer les options de réponse
     scoreElement.style.display = "block"; // Afficher le score
   
@@ -137,7 +136,7 @@ nextButton.addEventListener("click", function() {
   } else {
     timerDisappear();
    questionNumberElement.style.display = "none";
-    questionElement.textContent = "Votre score est de : " + score + " / 10";
+    questionElement.textContent = "Votre score est de :" +  " 0" + score + " / 10";
   optionsElement.style.display = "none";
 
   }
