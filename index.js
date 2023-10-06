@@ -223,9 +223,8 @@ function createResponse(correctAnswers) {
   };
     
   }
-
  
-let correctAnswers=
+ let correctAnswers=
  response = createResponse(number)
  console.log(response)
 =======
