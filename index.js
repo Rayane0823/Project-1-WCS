@@ -62,7 +62,7 @@ const options = [
     ["Notre Dame de la Garde", "Notre Dame de la Treille", "Notre Dame de l'Annonciation", "La Cathédrale Sainte-Cécile"],
     ["La capitale des Gaules", "La belle endormie", "La cité des Papes", "La capitale des Flandres"],
     ["Pierre Mauroy", "Martine Aubry", "Patrick Kanner", "Augustin Laurent"],
-    ["Un carnaval", "Une fête des Lumières", "Une braderie géante", "Un festival de crocs"],
+    ["Un carnaval", "Une fête des Lumières", "Une braderie géante", "Une exposition de crocs"],
     ["Charles de Gaulle", "Marcel Carpentier", "Philippe Leclerc", "Louis Faidherbe"],
     ["1667", "1687", "1707", "1727"],
     ["Reblochon", "Cheddar", "Brie", "Maroilles"],
